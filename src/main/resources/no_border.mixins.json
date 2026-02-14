@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.makaseloli.no_border.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "no_border.refmap.json",
+  "mixins": [
+    "EntityMixin",
+    "PlayerMixin",
+    "ServerGamePacketListenerImplMixin",
+    "TeleportCommandMixin",
+    "WorldBorderCommandMixin",
+    "WorldBorderMixin"
+  ],
+  "client": [
+    "LevelRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
