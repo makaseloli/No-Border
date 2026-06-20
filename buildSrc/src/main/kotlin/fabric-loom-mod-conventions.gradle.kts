@@ -27,6 +27,7 @@ loom {
     runs.configureEach {
         generateRunConfig.set(true)
         preferGradleTask.set(true)
+        jvmArguments.add("-Dmixin.env.disableRefMap=true")
         if (name == "gameTest") {
             jvmArguments.add("-Dfabric.log.level=debug")
         }
