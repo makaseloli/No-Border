@@ -99,6 +99,9 @@ tasks.named("sourcesJar") {
 
 tasks.jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    from(project(commonProject).sourceSets.main.get().output)
+    from(project(commonProject).sourceSets.main.get().output) {
+        exclude("$modId.mixins.json")
+        exclude("$modId.refmap.json*")
+    }
     from(project(sharedCommonProject).sourceSets.main.get().output)
 }
