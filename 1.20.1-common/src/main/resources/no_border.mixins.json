@@ -6,6 +6,7 @@
   "refmap": "no_border.refmap.json",
   "mixins": [
     "EntityMixin",
+    "LevelReaderMixin",
     "PlayerMixin",
     "ServerGamePacketListenerImplMixin",
     "TeleportCommandMixin",
